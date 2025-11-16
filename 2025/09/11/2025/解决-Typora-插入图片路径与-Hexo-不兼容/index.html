@@ -164,7 +164,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">问题描述：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">解决方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">1. 配置 Hexo 资源文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">2. 配置 Typora 自动保存图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">3. 验证效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">4. 注意事项</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">效果</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">问题描述：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">解决方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E9%85%8D%E7%BD%AE-Hexo-%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">1. 配置 Hexo 资源文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AE-Typora-%E8%87%AA%E5%8A%A8%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">2. 配置 Typora 自动保存图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">3. 验证效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">4. 注意事项</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%88%E6%9E%9C"><span class="nav-number">3.</span> <span class="nav-text">效果</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -297,18 +297,18 @@
 
 
 
-<h1><span id="问题描述">问题描述：</span></h1><p>每次在typaro 里面插入的图片格式都是这样的绝对路径</p>
+<h1 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h1><p>每次在typaro 里面插入的图片格式都是这样的绝对路径</p>
 <p><img src="/2025/09/11/2025/%E8%A7%A3%E5%86%B3-Typora-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E4%B8%8E-Hexo-%E4%B8%8D%E5%85%BC%E5%AE%B9/image-20250911155104238.png" alt="image-20250911155104238"></p>
 <p>而在hexo显示需要的是这样的格式</p>
 <p><img src="/2025/09/11/2025/%E8%A7%A3%E5%86%B3-Typora-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E4%B8%8E-Hexo-%E4%B8%8D%E5%85%BC%E5%AE%B9/image-20250911155148931.png" alt="image-20250911155148931"></p>
 <p>第一个是绝对路径应该改为相对路径</p>
 <p>第二个是 &#x2F; 与 \ 的不同</p>
-<h1><span id="解决方法">解决方法：</span></h1><p><strong>核心思路</strong>：让 Typora 自动将图片保存到 Hexo 文章的同名资源文件夹，并生成相对路径。</p>
-<h4><span id="1-配置-hexo-资源文件夹">1. 配置 Hexo 资源文件夹</span></h4><p>打开 Hexo 根目录的 <code>_config.yml</code>，添加以下配置：</p>
+<h1 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h1><p><strong>核心思路</strong>：让 Typora 自动将图片保存到 Hexo 文章的同名资源文件夹，并生成相对路径。</p>
+<h4 id="1-配置-Hexo-资源文件夹"><a href="#1-配置-Hexo-资源文件夹" class="headerlink" title="1. 配置 Hexo 资源文件夹"></a>1. 配置 Hexo 资源文件夹</h4><p>打开 Hexo 根目录的 <code>_config.yml</code>，添加以下配置：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span>  <span class="comment"># 启用文章资源文件夹功能</span></span><br></pre></td></tr></table></figure>
 
 <p>此后，使用 <code>hexo new &quot;文章标题&quot;</code> 创建文章时，会自动生成同名文件夹（如 <code>相机标定原理介绍/</code>）。</p>
-<h4><span id="2-配置-typora-自动保存图片">2. 配置 Typora 自动保存图片</span></h4><p>打开 Typora → <strong>偏好设置 → 图像</strong>，按以下步骤操作：</p>
+<h4 id="2-配置-Typora-自动保存图片"><a href="#2-配置-Typora-自动保存图片" class="headerlink" title="2. 配置 Typora 自动保存图片"></a>2. 配置 Typora 自动保存图片</h4><p>打开 Typora → <strong>偏好设置 → 图像</strong>，按以下步骤操作：</p>
 <ul>
 <li><p>插入图片时：选择 复制到指定路径，并输入路径：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./$(filename)  # 表示当前文章的同名文件夹（与 Hexo 资源文件夹路径一致）</span><br></pre></td></tr></table></figure>
@@ -323,18 +323,18 @@
 <li><p><strong>链接格式</strong>：选择 <strong>相对路径</strong>（确保生成的路径不带盘符或绝对路径）。</p>
 </li>
 </ul>
-<h4><span id="3-验证效果">3. 验证效果</span></h4><ul>
+<h4 id="3-验证效果"><a href="#3-验证效果" class="headerlink" title="3. 验证效果"></a>3. 验证效果</h4><ul>
 <li><p>插入图片时，Typora 会自动将图片复制到文章同名文件夹，并生成路径：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片</span>](<span class="link">相机标定原理介绍/1.png</span>)  # 直接引用文件夹内的图片</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>执行 <code>hexo g &amp;&amp; hexo d</code> 部署后，图片会被正确打包到 Hexo 的 <code>public</code> 目录。</p>
 </li>
 </ul>
-<h4><span id="4-注意事项">4. 注意事项</span></h4><ul>
+<h4 id="4-注意事项"><a href="#4-注意事项" class="headerlink" title="4. 注意事项"></a>4. 注意事项</h4><ul>
 <li>必须通过 <code>hexo new</code> 命令创建文章，否则不会自动生成资源文件夹。</li>
 <li>若手动创建文章，需手动在 <code>source/_posts/</code> 下创建同名文件夹，并在 Typora 中粘贴图片时选择 <strong>复制到当前文件夹</strong>。</li>
 </ul>
-<h1><span id="效果">效果</span></h1><p><img src="/2025/09/11/2025/%E8%A7%A3%E5%86%B3-Typora-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E4%B8%8E-Hexo-%E4%B8%8D%E5%85%BC%E5%AE%B9/image-20250911155502919.png" alt="image-20250911155502919"></p>
+<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><img src="/2025/09/11/2025/%E8%A7%A3%E5%86%B3-Typora-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E4%B8%8E-Hexo-%E4%B8%8D%E5%85%BC%E5%AE%B9/image-20250911155502919.png" alt="image-20250911155502919"></p>
 
     </div>
 

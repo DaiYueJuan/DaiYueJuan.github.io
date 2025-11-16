@@ -161,7 +161,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">出现场景：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">常见原因及解决方案：</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%BA%E7%8E%B0%E5%9C%BA%E6%99%AF%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">出现场景：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">常见原因及解决方案：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -293,9 +293,9 @@
     <div class="post-body" itemprop="articleBody"><span id="more"></span>
 
 <p>严重性	代码	说明	项目	文件	行	禁止显示状态 错误	LNK2001	无法解析的外部符号 “public: static struct QMetaObject const xxxxx::staticMetaObject” (?staticMetaObject@xxxxx@@2UQMetaObject@@B)	</p>
-<h1><span id="出现场景"><strong>出现场景：</strong></span></h1><p>在新电脑安装VS2019,和QT VS TOOLS插件之后，代码是可以正常运行生成的。后面安装了番茄助手，然后QT VS TOOLS 的插件就不见了（暂时没有找到原因） 。就出现了这个报错。</p>
+<h1 id="出现场景："><a href="#出现场景：" class="headerlink" title="出现场景："></a><strong>出现场景：</strong></h1><p>在新电脑安装VS2019,和QT VS TOOLS插件之后，代码是可以正常运行生成的。后面安装了番茄助手，然后QT VS TOOLS 的插件就不见了（暂时没有找到原因） 。就出现了这个报错。</p>
 <p>这个链接错误（<code>LNK2001: 无法解析的外部符号 staticMetaObject</code>）通常是由于 <strong>Qt 宏</strong>（如 <code>Q_OBJECT</code>）使用不当或相关的 moc 文件没有被正确生成&#x2F;链接导致的。</p>
-<h1><span id="常见原因及解决方案"><strong>常见原因及解决方案：</strong></span></h1><p> <strong>1.类中使用了 <code>Q_OBJECT</code> 宏，但未运行 <code>moc</code>（Meta-Object Compiler）</strong></p>
+<h1 id="常见原因及解决方案："><a href="#常见原因及解决方案：" class="headerlink" title="常见原因及解决方案："></a><strong>常见原因及解决方案：</strong></h1><p> <strong>1.类中使用了 <code>Q_OBJECT</code> 宏，但未运行 <code>moc</code>（Meta-Object Compiler）</strong></p>
 <p>​	检查你的类 <code>xxxxx</code> 的头文件是否包含了 <code>Q_OBJECT</code> 宏。</p>
 <p><strong>2.头文件未被正确包含在构建系统中（尤其是非 Qt Creator 的项目）</strong></p>
 <p>​	确保你的类头文件 <code>xxx</code> 已添加到项目中，而不是仅仅被引用（否则 VS 不会触发 moc）。</p>

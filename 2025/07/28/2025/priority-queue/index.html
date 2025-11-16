@@ -161,7 +161,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">优先级队列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">以下参考代码随想录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.2.</span> <span class="nav-text">以下参考C语言中文网</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">按照元素值从大到小进行排序，还可以使用</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建priority_queue的几种方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.2.2.</span> <span class="nav-text">priority_queue提供的成员函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">在 C++ 中，emplace 和 push 的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.1.</span> <span class="nav-text">emplace 直接构造元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.2.</span> <span class="nav-text">push 需要构造临时对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.3.</span> <span class="nav-text">性能优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.4.</span> <span class="nav-text">代码对比</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%98%E5%85%88%E7%BA%A7%E9%98%9F%E5%88%97"><span class="nav-number">1.</span> <span class="nav-text">优先级队列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E4%B8%8B%E5%8F%82%E8%80%83%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95"><span class="nav-number">1.1.</span> <span class="nav-text">以下参考代码随想录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E4%B8%8B%E5%8F%82%E8%80%83C%E8%AF%AD%E8%A8%80%E4%B8%AD%E6%96%87%E7%BD%91"><span class="nav-number">1.2.</span> <span class="nav-text">以下参考C语言中文网</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8C%89%E7%85%A7%E5%85%83%E7%B4%A0%E5%80%BC%E4%BB%8E%E5%A4%A7%E5%88%B0%E5%B0%8F%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F%EF%BC%8C%E8%BF%98%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">按照元素值从大到小进行排序，还可以使用</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BApriority-queue%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建priority_queue的几种方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#priority-queue%E6%8F%90%E4%BE%9B%E7%9A%84%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.2.</span> <span class="nav-text">priority_queue提供的成员函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8-C-%E4%B8%AD%EF%BC%8Cemplace-%E5%92%8C-push-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.</span> <span class="nav-text">在 C++ 中，emplace 和 push 的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#emplace-%E7%9B%B4%E6%8E%A5%E6%9E%84%E9%80%A0%E5%85%83%E7%B4%A0"><span class="nav-number">2.1.</span> <span class="nav-text">emplace 直接构造元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push-%E9%9C%80%E8%A6%81%E6%9E%84%E9%80%A0%E4%B8%B4%E6%97%B6%E5%AF%B9%E8%B1%A1"><span class="nav-number">2.2.</span> <span class="nav-text">push 需要构造临时对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E4%BC%98%E5%8A%BF"><span class="nav-number">2.3.</span> <span class="nav-text">性能优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AF%B9%E6%AF%94"><span class="nav-number">2.4.</span> <span class="nav-text">代码对比</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -300,14 +300,14 @@
 
 <p>参考：<a target="_blank" rel="noopener" href="https://c.biancheng.net/view/6987.html">C++ STL priority_queue容器适配器详解 - C语言中文网</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.programmercarl.com/0347.%E5%89%8DK%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE">代码随想录</a></p>
-<h2><span id="优先级队列"><strong>优先级队列</strong></span></h2><h3><span id="以下参考代码随想录">以下参考代码<strong>随想录</strong></span></h3><p>什么是优先级队列呢？</p>
+<h2 id="优先级队列"><a href="#优先级队列" class="headerlink" title="优先级队列"></a><strong>优先级队列</strong></h2><h3 id="以下参考代码随想录"><a href="#以下参考代码随想录" class="headerlink" title="以下参考代码随想录"></a>以下参考代码<strong>随想录</strong></h3><p>什么是优先级队列呢？</p>
 <p>其实<strong>就是一个披着队列外衣的堆</strong>，因为优先级队列对外接口只是从队头取元素，从队尾添加元素，再无其他取元素的方式，看起来就是一个队列。</p>
 <p>而且优先级队列内部元素是自动依照元素的权值排列。那么它是如何有序排列的呢？</p>
 <p>缺省情况下priority_queue利用max-heap（大顶堆）完成对元素的排序，这个大顶堆是以vector为表现形式的complete binary tree（完全二叉树）。</p>
 <p>什么是堆呢？</p>
 <p><strong>堆是一棵完全二叉树，树中每个结点的值都不小于（或不大于）其左右孩子的值。</strong> 如果父亲结点是大于等于左右孩子就是大顶堆，小于等于左右孩子就是小顶堆。</p>
 <p>所以大家经常说的大顶堆（堆头是最大元素），小顶堆（堆头是最小元素），如果懒得自己实现的话，就直接用priority_queue（优先级队列）就可以了，底层实现都是一样的，从小到大排就是小顶堆，从大到小排就是大顶堆。</p>
-<h3><span id="以下参考c语言中文网">以下参考<strong>C语言中文网</strong></span></h3><p>priority_queue 容器适配器模拟的也是队列这种存储结构，即使用此容器适配器存储元素只能“从一端进（称为队尾），从另一端出（称为队头）”，且每次只能访问 priority_queue 中位于队头的元素。</p>
+<h3 id="以下参考C语言中文网"><a href="#以下参考C语言中文网" class="headerlink" title="以下参考C语言中文网"></a>以下参考<strong>C语言中文网</strong></h3><p>priority_queue 容器适配器模拟的也是队列这种存储结构，即使用此容器适配器存储元素只能“从一端进（称为队尾），从另一端出（称为队头）”，且每次只能访问 priority_queue 中位于队头的元素。</p>
 <p>但是，priority_queue 容器适配器中元素的存和取，遵循的并不是 “First in,First out”（先入先出）原则，而是“<strong>First in，Largest out</strong>”原则。直白的翻译，指的就是先进队列的元素并不一定先出队列，而是优先级最大的元素最先出队列。</p>
 <blockquote>
 <p>注意，“First in，Largest out”原则是笔者为了总结 priority_queue 存取元素的特性自创的一种称谓，仅为了方便读者理解。</p>
@@ -334,20 +334,20 @@
 <li><p>typename Compare：指定容器中评定元素优先级所遵循的排序规则，默认使用</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::less&lt;T&gt;</span><br></pre></td></tr></table></figure>
 
-<h5><span id="按照元素值从大到小进行排序还可以使用">按照元素值从大到小进行排序，还可以使用</span></h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::greater&lt;T&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="按照元素值从大到小进行排序，还可以使用"><a href="#按照元素值从大到小进行排序，还可以使用" class="headerlink" title="按照元素值从大到小进行排序，还可以使用"></a>按照元素值从大到小进行排序，还可以使用</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::greater&lt;T&gt;</span><br></pre></td></tr></table></figure>
 
 <p>按照元素值从小到大排序，但更多情况下是使用自定义的排序规则。</p>
 <blockquote>
-<p>其中，std::less<t> 和 std::greater<t> 都是以函数对象的方式定义在 <function> 头文件中。关于如何自定义排序规则，后续章节会做详细介绍。</function></t></t></p>
+<p>其中，std::less<T> 和 std::greater<T> 都是以函数对象的方式定义在 <function> 头文件中。关于如何自定义排序规则，后续章节会做详细介绍。</p>
 </blockquote>
 </li>
 </ul>
-<h4><span id="创建priority_queue的几种方式">创建priority_queue的几种方式</span></h4><p>由于 priority_queue 容器适配器模板位于<code>&lt;queue&gt;</code>头文件中，并定义在 std 命名空间里，因此在试图创建该类型容器之前，程序中需包含以下 2 行代码：</p>
+<h4 id="创建priority-queue的几种方式"><a href="#创建priority-queue的几种方式" class="headerlink" title="创建priority_queue的几种方式"></a>创建priority_queue的几种方式</h4><p>由于 priority_queue 容器适配器模板位于<code>&lt;queue&gt;</code>头文件中，并定义在 std 命名空间里，因此在试图创建该类型容器之前，程序中需包含以下 2 行代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;queue&gt;</span><br><span class="line">using namespace std;</span><br></pre></td></tr></table></figure>
 
 <p>创建 priority_queue 容器适配器的方法，大致有以下几种。</p>
 <ol>
-<li>创建一个空的 priority_queue 容器适配器，第底层采用默认的 vector 容器，排序方式也采用默认的 std::less<t> 方法：</t></li>
+<li>创建一个空的 priority_queue 容器适配器，第底层采用默认的 vector 容器，排序方式也采用默认的 std::less<T> 方法：</li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::priority_queue&lt;int&gt; values;</span><br></pre></td></tr></table></figure>
 
@@ -362,11 +362,11 @@
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int values[]&#123; 4,1,2,3 &#125;;</span><br><span class="line">std::priority_queue&lt;int, std::deque&lt;int&gt;, std::greater&lt;int&gt; &gt;copy_values(values, values+4);//&#123;1,3,2,4&#125;</span><br></pre></td></tr></table></figure>
 
-<p>事实上，std::less<t> 和 std::greater<t> 适用的场景是有限的，更多场景中我们会使用自定义的排序规则。</t></t></p>
+<p>事实上，std::less<T> 和 std::greater<T> 适用的场景是有限的，更多场景中我们会使用自定义的排序规则。</p>
 <blockquote>
 <p>由于自定义排序规则的方式不只一种，因此这部分知识将在后续章节做详细介绍。</p>
 </blockquote>
-<h4><span id="priority_queue提供的成员函数">priority_queue提供的成员函数</span></h4><p>priority_queue 容器适配器提供了表 2 所示的这些成员函数。</p>
+<h4 id="priority-queue提供的成员函数"><a href="#priority-queue提供的成员函数" class="headerlink" title="priority_queue提供的成员函数"></a>priority_queue提供的成员函数</h4><p>priority_queue 容器适配器提供了表 2 所示的这些成员函数。</p>
 <table>
 <thead>
 <tr>
@@ -403,27 +403,27 @@
 <td>移除 priority_queue 容器适配器中第一个元素。</td>
 </tr>
 <tr>
-<td>swap(priority_queue<t>&amp; other)</t></td>
+<td>swap(priority_queue<T>&amp; other)</td>
 <td>将两个 priority_queue 容器适配器中的元素进行互换，需要注意的是，进行互换的 2 个 priority_queue 容器适配器中存储的元素类型以及底层采用的基础容器类型，都必须相同。</td>
 </tr>
 </tbody></table>
 <blockquote>
 <p>和 queue 一样，priority_queue 也没有迭代器，因此访问元素的唯一方式是遍历容器，通过不断移除访问过的元素，去访问下一个元素。</p>
 </blockquote>
-<h2><span id="在-c-中emplace-和-push-的区别">在 C++ 中，<code>emplace</code> 和 <code>push</code> 的区别</span></h2><p><code>emplace</code> 和 <code>push</code> 都可以用来向容器中添加元素，但它们的工作方式有所不同。在这个特定的代码中，使用 <code>emplace</code> 比 <code>push</code> 更高效，原因如下：</p>
-<h3><span id="emplace-直接构造元素"><strong><code>emplace</code> 直接构造元素</strong></span></h3><ul>
+<h2 id="在-C-中，emplace-和-push-的区别"><a href="#在-C-中，emplace-和-push-的区别" class="headerlink" title="在 C++ 中，emplace 和 push 的区别"></a>在 C++ 中，<code>emplace</code> 和 <code>push</code> 的区别</h2><p><code>emplace</code> 和 <code>push</code> 都可以用来向容器中添加元素，但它们的工作方式有所不同。在这个特定的代码中，使用 <code>emplace</code> 比 <code>push</code> 更高效，原因如下：</p>
+<h3 id="emplace-直接构造元素"><a href="#emplace-直接构造元素" class="headerlink" title="emplace 直接构造元素"></a><strong><code>emplace</code> 直接构造元素</strong></h3><ul>
 <li><code>q.emplace(nums[i], i)</code> 会直接在优先队列的内存中构造一个 <code>pair&lt;int, int&gt;</code> 对象，避免了临时对象的创建和拷贝&#x2F;移动操作。</li>
 <li>它等价于 <code>q.push(std::pair&lt;int, int&gt;(nums[i], i))</code>，但更高效，因为 <code>emplace</code> 直接在容器内部构造对象，省去了额外的拷贝或移动开销。</li>
 </ul>
-<h3><span id="push-需要构造临时对象"><strong><code>push</code> 需要构造临时对象</strong></span></h3><ul>
+<h3 id="push-需要构造临时对象"><a href="#push-需要构造临时对象" class="headerlink" title="push 需要构造临时对象"></a><strong><code>push</code> 需要构造临时对象</strong></h3><ul>
 <li>如果使用 <code>push</code>，你需要显式构造一个 <code>pair</code> 对象，如 <code>q.push(make_pair(nums[i], i))</code> 或 <code>q.push(&#123;nums[i], i)&#125;)</code>。</li>
 <li>这会先创建一个临时 <code>pair</code> 对象，然后将其拷贝或移动到优先队列中，多了一次不必要的构造和拷贝&#x2F;移动操作。</li>
 </ul>
-<h3><span id="性能优势"><strong>性能优势</strong></span></h3><ul>
+<h3 id="性能优势"><a href="#性能优势" class="headerlink" title="性能优势"></a><strong>性能优势</strong></h3><ul>
 <li>对于像 <code>pair&lt;int, int&gt;</code> 这样的简单类型，<code>emplace</code> 和 <code>push</code> 的性能差异可能不大，但在更复杂的场景（如构造含多个参数的对象）时，<code>emplace</code> 能显著减少开销。</li>
 <li>由于 <code>emplace</code> 是 C++11 引入的优化方式，它更符合现代 C++ 的高效编程风格。</li>
 </ul>
-<h3><span id="代码对比">代码对比</span></h3><p>cpp</p>
+<h3 id="代码对比"><a href="#代码对比" class="headerlink" title="代码对比"></a>代码对比</h3><p>cpp</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 使用 emplace（推荐）</span><br><span class="line">q.emplace(nums[i], i);  // 直接在优先队列中构造 pair</span><br><span class="line"></span><br><span class="line">// 使用 push（需要构造临时对象）</span><br><span class="line">q.push(std::make_pair(nums[i], i));  // 先构造临时 pair，再拷贝/移动到队列</span><br></pre></td></tr></table></figure>
 
     </div>
