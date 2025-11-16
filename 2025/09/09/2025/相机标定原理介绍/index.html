@@ -169,7 +169,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">相机标定的原理简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%B8%E6%9C%BA%E6%98%AF%E5%A6%82%E4%BD%95%E6%88%90%E5%83%8F%E7%9A%84"><span class="nav-number">2.</span> <span class="nav-text">相机是如何成像的</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%8F%82%EF%BC%9F"><span class="nav-number">2.1.</span> <span class="nav-text">什么是内参？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%A4%96%E5%8F%82%EF%BC%9F"><span class="nav-number">2.2.</span> <span class="nav-text">什么是外参？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%90%E5%83%8F%E5%8E%9F%E7%90%86%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.3.</span> <span class="nav-text">成像原理详细介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E6%9C%BA%E7%95%B8%E5%8F%98%E4%B8%8E%E7%95%B8%E5%8F%98%E7%9F%AB%E6%AD%A3"><span class="nav-number">2.4.</span> <span class="nav-text">相机畸变与畸变矫正</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%84%E5%90%91%E7%95%B8%E5%8F%98%EF%BC%9A"><span class="nav-number">2.4.1.</span> <span class="nav-text">径向畸变：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%87%E5%90%91%E7%95%B8%E5%8F%98%EF%BC%9A"><span class="nav-number">2.4.2.</span> <span class="nav-text">切向畸变：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">相机标定的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E6%96%B9%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">常见的相机标定方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E5%B7%B2%E7%9F%A5%E6%A0%87%E5%AE%9A%E7%89%A9%E7%9A%84%E6%A0%87%E5%AE%9A%EF%BC%88%E6%9C%80%E5%B8%B8%E7%94%A8%EF%BC%89"><span class="nav-number">3.1.1.</span> <span class="nav-text">基于已知标定物的标定（最常用）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-%E5%BC%A0%E6%AD%A3%E5%8F%8B%E6%A0%87%E5%AE%9A%E6%B3%95%EF%BC%88Zhang%E2%80%99s-Method%EF%BC%89"><span class="nav-number">3.1.1.1.</span> <span class="nav-text">a) 张正友标定法（Zhang’s Method）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-%E5%9F%BA%E4%BA%8E%E5%9C%86%E7%82%B9%E9%98%B5%E5%88%97-%E5%AF%B9%E7%A7%B0%E5%9C%86%E6%A0%87%E5%AE%9A%E6%9D%BF"><span class="nav-number">3.1.1.2.</span> <span class="nav-text">b) 基于圆点阵列&#x2F;对称圆标定板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-%E4%B8%89%E7%BB%B4%E6%A0%87%E5%AE%9A%E7%89%A9%E4%BD%93%EF%BC%88%E7%AB%8B%E4%BD%93%E6%A0%87%E5%AE%9A%E5%9D%97%EF%BC%89"><span class="nav-number">3.1.1.3.</span> <span class="nav-text">c) 三维标定物体（立体标定块）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%87%AA%E6%A0%87%E5%AE%9A%EF%BC%88Self-Calibration%EF%BC%89"><span class="nav-number">3.1.2.</span> <span class="nav-text">(2) 自标定（Self-Calibration）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%9F%BA%E4%BA%8E%E8%BF%90%E5%8A%A8%E7%9A%84%E6%A0%87%E5%AE%9A%EF%BC%88Hand-Eye-Calibration-Robot-Calibration%EF%BC%89"><span class="nav-number">3.1.3.</span> <span class="nav-text">(3) 基于运动的标定（Hand-Eye Calibration, Robot Calibration）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%84%E6%96%B9%E6%B3%95%E5%AF%B9%E6%AF%94"><span class="nav-number">3.2.</span> <span class="nav-text">各方法对比</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">总结：</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">相机标定的原理简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">相机是如何成像的</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.1.</span> <span class="nav-text">什么是内参？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.2.</span> <span class="nav-text">什么是外参？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.3.</span> <span class="nav-text">成像原理详细介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.4.</span> <span class="nav-text">相机畸变与畸变矫正</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.4.1.</span> <span class="nav-text">径向畸变：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.4.2.</span> <span class="nav-text">切向畸变：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">相机标定的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.1.</span> <span class="nav-text">常见的相机标定方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">3.1.1.</span> <span class="nav-text">基于已知标定物的标定（最常用）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">3.1.1.1.</span> <span class="nav-text">a) 张正友标定法（Zhang’s Method）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">3.1.1.2.</span> <span class="nav-text">b) 基于圆点阵列&#x2F;对称圆标定板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">3.1.1.3.</span> <span class="nav-text">c) 三维标定物体（立体标定块）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">3.1.2.</span> <span class="nav-text">(2) 自标定（Self-Calibration）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">3.1.3.</span> <span class="nav-text">(3) 基于运动的标定（Hand-Eye Calibration, Robot Calibration）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.2.</span> <span class="nav-text">各方法对比</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">4.</span> <span class="nav-text">总结：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -190,12 +190,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">46</span>
+        <span class="site-state-item-count">48</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -306,9 +306,9 @@
     
     <div class="post-body" itemprop="articleBody"><span id="more"></span>
 
-<h1 id="相机标定的原理简介"><a href="#相机标定的原理简介" class="headerlink" title="相机标定的原理简介"></a>相机标定的原理简介</h1><p>相机标定（Camera Calibration）的原理主要是通过一系列已知几何信息的标定板图像，求解相机的内参、外参以及畸变参数，从而建立三维空间点与图像二维像素点之间的准确数学模型。</p>
-<h1 id="相机是如何成像的"><a href="#相机是如何成像的" class="headerlink" title="相机是如何成像的"></a>相机是如何成像的</h1><p>相机标定的理论基础是 <strong>针孔成像模型</strong>。（小孔成像）</p>
-<style>.dahwqsclmyss{zoom: 80%;}</style><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/5.png" class="dahwqsclmyss">
+<h1><span id="相机标定的原理简介">相机标定的原理简介</span></h1><p>相机标定（Camera Calibration）的原理主要是通过一系列已知几何信息的标定板图像，求解相机的内参、外参以及畸变参数，从而建立三维空间点与图像二维像素点之间的准确数学模型。</p>
+<h1><span id="相机是如何成像的">相机是如何成像的</span></h1><p>相机标定的理论基础是 <strong>针孔成像模型</strong>。（小孔成像）</p>
+<style>.zuoubksohrdf{zoom: 80%;}</style><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/5.png" class="zuoubksohrdf">
 
 <p>空间点 (X,Y,Z)（在相机坐标系下）经过投影关系映射到图像平面上的像素点 (u,v)。基本关系为：</p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/1.png" alt="图片"></p>
@@ -320,7 +320,7 @@
 <p>(u,v)↔(ku,kv,k), k≠0</p>
 <p>它们表示的是同一个点。</p>
 </blockquote>
-<h2 id="什么是内参？"><a href="#什么是内参？" class="headerlink" title="什么是内参？"></a>什么是内参？</h2><p>内参描述的是 <strong>相机自身的成像特性</strong>，与相机的物理结构（镜头、像素尺寸等）有关。</p>
+<h2><span id="什么是内参">什么是内参？</span></h2><p>内参描述的是 <strong>相机自身的成像特性</strong>，与相机的物理结构（镜头、像素尺寸等）有关。</p>
 <p>所以内参矩阵一般标定一次之后，如果没有碰撞是不会改变的。</p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/2.png" alt="图片"></p>
 <p>其中：</p>
@@ -335,7 +335,7 @@
 <li>γ：像素坐标轴之间的夹角系数，若像素是矩形则 γ&#x3D;0</li>
 </ul>
 <p><strong>总结</strong>：在标定时通常是固定的一组参数，求出后可用于去畸变、图像矫正。相机“内在的透视投影规律” → 相机的固有属性。</p>
-<h2 id="什么是外参？"><a href="#什么是外参？" class="headerlink" title="什么是外参？"></a>什么是外参？</h2><p>外参描述的是 <strong>相机坐标系与世界坐标系之间的关系</strong>。</p>
+<h2><span id="什么是外参">什么是外参？</span></h2><p>外参描述的是 <strong>相机坐标系与世界坐标系之间的关系</strong>。</p>
 <p>它由旋转矩阵 R 和平移向量 t 组成：</p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/3.png" alt="图片"></p>
 <p>其中：</p>
@@ -344,7 +344,7 @@
 <li>t：3×1 的平移向量，描述世界坐标系原点在相机坐标系下的位置</li>
 </ul>
 <p><strong>总结</strong>：每张标定板图像对应一组外参，用来描述标定板在相机前的位置和方向。相机“放在空间里的位置和方向” → 相机和世界坐标系的关系。</p>
-<h2 id="成像原理详细介绍"><a href="#成像原理详细介绍" class="headerlink" title="成像原理详细介绍"></a>成像原理详细介绍</h2><p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/4.png" alt="图片"></p>
+<h2><span id="成像原理详细介绍">成像原理详细介绍</span></h2><p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/4.png" alt="图片"></p>
 <p><strong>相机成像系统中，共包含四个坐标系：世界坐标系、相机坐标系、图像坐标系、像素坐标系。</strong></p>
 <ul>
 <li><strong>世界坐标系</strong>：由用户定义的三维世界坐标系，描述物体和相机在真实世界中的位置，原点可以任意选择。</li>
@@ -355,9 +355,9 @@
 <p>世界坐标系下的Pw点 ，在相机坐标系中的坐标为Pc，投影到图像坐标系后坐标为P(x,y) ，对应在像素坐标系中的坐标为P(u,v)。</p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/6.png" alt="图片"></p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/7.png" alt="图片"></p>
-<h2 id="相机畸变与畸变矫正"><a href="#相机畸变与畸变矫正" class="headerlink" title="相机畸变与畸变矫正"></a>相机畸变与畸变矫正</h2><p>相机拍摄的图片还存在一定的畸变，畸变包括桶形畸变和枕形畸变。畸变模型包括<strong>径向畸变</strong>和<strong>切向畸变</strong>。</p>
-<h3 id="径向畸变："><a href="#径向畸变：" class="headerlink" title="径向畸变："></a><strong>径向畸变：</strong></h3><p>可以这样来理解，对于透镜而言，以透镜的中心作为原点，往外是透镜的半径的方向，<strong>当光线越靠近中心的位置，畸变越小</strong>，沿着半径方向远离中心的时候，畸变越大。典型的径向畸变有桶形畸变和枕形畸变。如下图所示。</p>
-<h3 id="切向畸变："><a href="#切向畸变：" class="headerlink" title="切向畸变："></a><strong>切向畸变：</strong></h3><p>切向畸变可以这样理解，当透镜与成像平面不行时，就产生了畸变，类似于透视变换。</p>
+<h2><span id="相机畸变与畸变矫正">相机畸变与畸变矫正</span></h2><p>相机拍摄的图片还存在一定的畸变，畸变包括桶形畸变和枕形畸变。畸变模型包括<strong>径向畸变</strong>和<strong>切向畸变</strong>。</p>
+<h3><span id="径向畸变"><strong>径向畸变：</strong></span></h3><p>可以这样来理解，对于透镜而言，以透镜的中心作为原点，往外是透镜的半径的方向，<strong>当光线越靠近中心的位置，畸变越小</strong>，沿着半径方向远离中心的时候，畸变越大。典型的径向畸变有桶形畸变和枕形畸变。如下图所示。</p>
+<h3><span id="切向畸变"><strong>切向畸变：</strong></span></h3><p>切向畸变可以这样理解，当透镜与成像平面不行时，就产生了畸变，类似于透视变换。</p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/8.png" alt="图片"></p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/9.png" alt="图片"></p>
 <p>注：</p>
@@ -365,9 +365,9 @@
 <p>如下图我做的梅卡曼德相机内参标定结果</p>
 <p><img src="/2025/09/09/2025/%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/10.png" alt="图片"></p>
 <p>畸变系数 [k1, k2, p1, p2, k3]</p>
-<h1 id="相机标定的方法"><a href="#相机标定的方法" class="headerlink" title="相机标定的方法"></a>相机标定的方法</h1><p><strong>相机标定的目标是去求解内参、畸变系数、外参。</strong></p>
-<h2 id="常见的相机标定方法"><a href="#常见的相机标定方法" class="headerlink" title="常见的相机标定方法"></a>常见的相机标定方法</h2><h3 id="基于已知标定物的标定（最常用）"><a href="#基于已知标定物的标定（最常用）" class="headerlink" title="基于已知标定物的标定（最常用）"></a><strong>基于已知标定物的标定</strong>（最常用）</h3><p>利用一个几何结构已知的标定板（如棋盘格、圆点阵列），获取多组图像来求解相机参数。</p>
-<h4 id="a-张正友标定法（Zhang’s-Method）"><a href="#a-张正友标定法（Zhang’s-Method）" class="headerlink" title="a) 张正友标定法（Zhang’s Method）"></a>a) 张正友标定法（Zhang’s Method）</h4><ul>
+<h1><span id="相机标定的方法">相机标定的方法</span></h1><p><strong>相机标定的目标是去求解内参、畸变系数、外参。</strong></p>
+<h2><span id="常见的相机标定方法">常见的相机标定方法</span></h2><h3><span id="基于已知标定物的标定最常用"><strong>基于已知标定物的标定</strong>（最常用）</span></h3><p>利用一个几何结构已知的标定板（如棋盘格、圆点阵列），获取多组图像来求解相机参数。</p>
+<h4><span id="a-张正友标定法zhangs-method">a) 张正友标定法（Zhang’s Method）</span></h4><ul>
 <li><strong>原理</strong>：只需一块平面棋盘格，拍摄多张不同姿态的图片。</li>
 <li><strong>步骤</strong>：<ol>
 <li>检测棋盘格角点（得到二维像素点 (u,v）</li>
@@ -379,29 +379,29 @@
 <li><strong>优点</strong>：方便、精度高、只需要平面棋盘格</li>
 <li><strong>缺点</strong>：对角点检测精度敏感</li>
 </ul>
-<h4 id="b-基于圆点阵列-对称圆标定板"><a href="#b-基于圆点阵列-对称圆标定板" class="headerlink" title="b) 基于圆点阵列&#x2F;对称圆标定板"></a>b) 基于圆点阵列&#x2F;对称圆标定板</h4><ul>
+<h4><span id="b-基于圆点阵列x2f对称圆标定板">b) 基于圆点阵列&#x2F;对称圆标定板</span></h4><ul>
 <li>用规则排列的圆形点，提取圆心作为特征点</li>
 <li><strong>优点</strong>：鲁棒性好，圆心定位比棋盘格角点更稳定，适合光照复杂环境</li>
 <li><strong>缺点</strong>：特征检测比棋盘格稍复杂</li>
 </ul>
-<h4 id="c-三维标定物体（立体标定块）"><a href="#c-三维标定物体（立体标定块）" class="headerlink" title="c) 三维标定物体（立体标定块）"></a>c) 三维标定物体（立体标定块）</h4><ul>
+<h4><span id="c-三维标定物体立体标定块">c) 三维标定物体（立体标定块）</span></h4><ul>
 <li>使用三维立体标定块（如立方体、3D 标定架）</li>
 <li><strong>优点</strong>：几何约束更强，精度高</li>
 <li><strong>缺点</strong>：制作复杂、成本高</li>
 </ul>
 <hr>
-<h3 id="2-自标定（Self-Calibration）"><a href="#2-自标定（Self-Calibration）" class="headerlink" title="(2) 自标定（Self-Calibration）"></a>(2) <strong>自标定（Self-Calibration）</strong></h3><ul>
+<h3><span id="2-自标定self-calibration">(2) <strong>自标定（Self-Calibration）</strong></span></h3><ul>
 <li>不使用标定板，只依赖图像序列中的几何约束（如相机运动信息、场景几何特征）。</li>
 <li><strong>方法</strong>：通过基础矩阵 F、单应性矩阵 H 等约束求相机内参。</li>
 <li><strong>优点</strong>：无需标定板，适合野外场景或移动设备（SLAM、SfM）。</li>
 <li><strong>缺点</strong>：精度低于基于标定板的方法，收敛依赖运动轨迹。</li>
 </ul>
 <hr>
-<h3 id="3-基于运动的标定（Hand-Eye-Calibration-Robot-Calibration）"><a href="#3-基于运动的标定（Hand-Eye-Calibration-Robot-Calibration）" class="headerlink" title="(3) 基于运动的标定（Hand-Eye Calibration, Robot Calibration）"></a>(3) <strong>基于运动的标定</strong>（Hand-Eye Calibration, Robot Calibration）</h3><ul>
+<h3><span id="3-基于运动的标定hand-eye-calibration-robot-calibration">(3) <strong>基于运动的标定</strong>（Hand-Eye Calibration, Robot Calibration）</span></h3><ul>
 <li>相机和机器人协作，通过已知的机器人运动信息（末端位姿）和相机观测到的特征点，联合求解外参或手眼关系。</li>
 <li>常用于：<strong>眼在手上 &#x2F; 眼在手外</strong> 机器人视觉系统。</li>
 </ul>
-<h2 id="各方法对比"><a href="#各方法对比" class="headerlink" title="各方法对比"></a>各方法对比</h2><table>
+<h2><span id="各方法对比">各方法对比</span></h2><table>
 <thead>
 <tr>
 <th>方法</th>
@@ -441,7 +441,7 @@
 <td>依赖机器人精度</td>
 </tr>
 </tbody></table>
-<h1 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h1><p>相机标定的目的是为了得到  世界坐标系下的三维点与成像平面上二维像素点之间的关系。</p>
+<h1><span id="总结">总结：</span></h1><p>相机标定的目的是为了得到  世界坐标系下的三维点与成像平面上二维像素点之间的关系。</p>
 <p>相机标定的原理是，通过一系列的已知标定板的图像信息去求解相机内参外参和畸变系数。</p>
 <p>相机的内参和畸变系数在出厂之后如果不被撞动内部元器件，是不会改变的。</p>
 <p>下一篇文章将继续介绍 使用Opencv开源库实现 张正友标定法和机器人手眼标定。</p>
@@ -499,13 +499,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">73k</span>
+    <span title="站点总字数">74k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:06</span>
+    <span title="站点阅读时长">1:07</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动

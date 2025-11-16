@@ -166,7 +166,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%AD%A3%E8%BF%90%E5%8A%A8%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">一、正运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%80%86%E8%BF%90%E5%8A%A8%E5%AD%A6"><span class="nav-number">2.</span> <span class="nav-text">二、逆运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81MDH%E5%92%8CDH%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.</span> <span class="nav-text">三、MDH和DH方法的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%81%94%E7%B3%BB%EF%BC%88%E7%9B%B8%E5%90%8C%E7%82%B9%EF%BC%89"><span class="nav-number">3.1.</span> <span class="nav-text">联系（相同点）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%BA%E5%88%AB%EF%BC%88%E5%85%B3%E9%94%AE%E5%B7%AE%E5%BC%82%EF%BC%89"><span class="nav-number">3.2.</span> <span class="nav-text">区别（关键差异）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">3.2.1.</span> <span class="nav-text">总结：</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">一、正运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">二、逆运动学</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">三、MDH和DH方法的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.1.</span> <span class="nav-text">联系（相同点）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">3.2.</span> <span class="nav-text">区别（关键差异）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">3.2.1.</span> <span class="nav-text">总结：</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -187,12 +187,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">46</span>
+        <span class="site-state-item-count">48</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -302,16 +302,16 @@
 <p>2.机器人动力学与控制（霍伟编著）</p>
 <p>3.<a target="_blank" rel="noopener" href="https://blog.csdn.net/Bellwen/article/details/129182436">机器人学基础（1）-位置运动学-正运动学、逆运动学方程建立及其求解-CSDN博客</a></p>
 <p>4.<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43724057/article/details/129739113">机器人学：（3）机器人运动学-CSDN博客</a></p>
-<h1 id="一、正运动学"><a href="#一、正运动学" class="headerlink" title="一、正运动学"></a>一、正运动学</h1><p><strong>正运动学可以理解为，已知机械臂各个关节θ，求机械臂手末端的位置和姿态。</strong></p>
+<h1><span id="一-正运动学">一、正运动学</span></h1><p><strong>正运动学可以理解为，已知机械臂各个关节θ，求机械臂手末端的位置和姿态。</strong></p>
 <p>核心是坐标系变换链：<br><code>T = A1(θ1) * A2(θ2) * ... * An(θn)</code><br>其中每个<code>Ai</code>是关节的变换矩阵</p>
-<h1 id="二、逆运动学"><a href="#二、逆运动学" class="headerlink" title="二、逆运动学"></a>二、逆运动学</h1><p><strong>逆运动学可以理解为，已知机械臂末端的位置和姿态(T)，求机械臂各个关节θ</strong></p>
-<h1 id="三、MDH和DH方法的区别"><a href="#三、MDH和DH方法的区别" class="headerlink" title="三、MDH和DH方法的区别"></a>三、MDH和DH方法的区别</h1><p>1955年，<strong>Denavit和Hartenberg</strong>提出一种基于齐次变换矩阵的低副机构建模方法，该方法为每个连杆固连了一个坐标系，用 4x4 的变换矩阵描述相邻连杆的位姿关系，通过齐次变换建立运动学模型，被称为Denavit-Hartenberg参数模型，简称D-H模型，这种建模方法被称为D-H法。</p>
+<h1><span id="二-逆运动学">二、逆运动学</span></h1><p><strong>逆运动学可以理解为，已知机械臂末端的位置和姿态(T)，求机械臂各个关节θ</strong></p>
+<h1><span id="三-mdh和dh方法的区别">三、MDH和DH方法的区别</span></h1><p>1955年，<strong>Denavit和Hartenberg</strong>提出一种基于齐次变换矩阵的低副机构建模方法，该方法为每个连杆固连了一个坐标系，用 4x4 的变换矩阵描述相邻连杆的位姿关系，通过齐次变换建立运动学模型，被称为Denavit-Hartenberg参数模型，简称D-H模型，这种建模方法被称为D-H法。</p>
 <p>目前，D-H建模方法主要有两种：<strong>标准 D-H 方法（Standard D-H method）<strong>和</strong>改进的 D-H 方法（Modified D-H method）</strong>。这两种方法<strong>主要区别</strong>在于<strong>坐标系建立的位置不同</strong>。</p>
 <p>MDH（修正Denavit–Hartenberg）和DH（标准Denavit–Hartenberg）方法都是用于建立<strong>串联机器人机械臂的运动学模型</strong>的建模方法，它们的目标相同：<strong>建立各连杆之间的坐标变换关系</strong>。</p>
 <p><img src="/2025/08/02/2025/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A6/DH.png"></p>
 <p><img src="/2025/08/02/2025/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A6/MDH%E7%9A%84%E7%89%B9%E7%82%B9.png"></p>
 <p><img src="/2025/08/02/2025/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A6/MDH.png"></p>
-<h2 id="联系（相同点）"><a href="#联系（相同点）" class="headerlink" title="联系（相同点）"></a>联系（相同点）</h2><table>
+<h2><span id="联系相同点">联系（相同点）</span></h2><table>
 <thead>
 <tr>
 <th>项目</th>
@@ -336,7 +336,7 @@
 </tr>
 </tbody></table>
 <p>参数的定义：杆件长度 a、杆件扭角 α、关节距离 d、关节转角 θ</p>
-<h2 id="区别（关键差异）"><a href="#区别（关键差异）" class="headerlink" title="区别（关键差异）"></a>区别（关键差异）</h2><table>
+<h2><span id="区别关键差异">区别（关键差异）</span></h2><table>
 <thead>
 <tr>
 <th>比较项</th>
@@ -370,15 +370,15 @@
 <td align="center">ROS、某些仿真软件更偏好MDH法</td>
 </tr>
 </tbody></table>
-<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>标准 DH 法适合教材与理论分析，<strong>MDH 更适合实际工程建模和复杂结构</strong>；两者变换本质一致，仅坐标系定义与变换顺序不同。</p>
+<h3><span id="总结">总结：</span></h3><p>标准 DH 法适合教材与理论分析，<strong>MDH 更适合实际工程建模和复杂结构</strong>；两者变换本质一致，仅坐标系定义与变换顺序不同。</p>
 <p>参数的定义：杆件长度 a、杆件扭角 α、关节距离 d、关节转角 θ</p>
 <p><strong>DH和MDH的四个参数的具体定义不一样（主要是对杆件长度和杆件扭角的定义不一样），齐次变换矩阵不一样（顺序不一样）。</strong></p>
 <p>DH参数与MDH 参数间，除 i &#x3D; 0 和i &#x3D; n 的某些特殊情况外，<strong>一般地有以下关系：</strong><br>D H 参数｛a i ，αi ，di ，θi｝ &#x3D; 修改的 D H 参数｛a i₊₁ ，αi₊₁ ，di ，θi｝</p>
 <p>DH的变换矩阵是    d θ a α</p>
 <p>MDH的变换矩阵是  a α d θ</p>
-<style>.jvreltmsnnot{zoom:50%;}</style><img src="/2025/08/02/2025/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A6/DH%E5%BB%BA%E6%A8%A1.png" class="jvreltmsnnot">
+<style>.tbbgtlpcfrxp{zoom:50%;}</style><img src="/2025/08/02/2025/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A6/DH%E5%BB%BA%E6%A8%A1.png" class="tbbgtlpcfrxp">
 
-<style>.fkgmmilkxhoy{zoom:50%;}</style>
+<style>.iibpedjblwoe{zoom:50%;}</style>
 
     </div>
 
@@ -436,13 +436,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">73k</span>
+    <span title="站点总字数">74k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:06</span>
+    <span title="站点阅读时长">1:07</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
