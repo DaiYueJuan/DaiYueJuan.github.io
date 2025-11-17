@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"daiyuejuan.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.23.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"daiyuejuan.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.23.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"defalut"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="C++中less和greater比较器的功能，解释了它们如何影响排序和优先级队列的行为。分析了比较规则、自定义比较函数以及在数组和优先级队列中的应用。">
 <meta property="og:type" content="article">
@@ -72,6 +72,7 @@
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
@@ -278,6 +279,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -336,7 +344,7 @@
 <p>priority_queue 容器适配器模拟的也是队列这种存储结构，即使用此容器适配器存储元素只能“从一端进（称为队尾），从另一端出（称为队头）”，且每次只能访问 priority_queue 中位于队头的元素。</p>
 <p>但是，priority_queue 容器适配器中元素的存和取，遵循的并不是 “First in,First out”（先入先出）原则，而是“<em><strong>*First in，Largest out*</strong></em>”原则。直白的翻译，指的就是先进队列的元素并不一定先出队列，而是优先级最大的元素最先出队列。（<strong>Largest out</strong>是指权重最大）</p>
 <p><strong>通过以上的内容，我们可以用priority_queue来理解下面的内容。</strong></p>
-<style>.zdccmzenfhmi{zoom:75%;}</style><img src="/2025/07/28/2025/std-greater-%E5%92%8Cstd-less-%E5%9C%A8%E6%8E%92%E5%BA%8F%E5%92%8C%E5%BB%BA%E5%A0%86%E7%9A%84%E5%BA%94%E7%94%A8%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%A7%84%E5%88%99/priority_queue.png" class="zdccmzenfhmi" alt="图片">
+<style>.oehvrmhglhud{zoom:75%;}</style><img src="/2025/07/28/2025/std-greater-%E5%92%8Cstd-less-%E5%9C%A8%E6%8E%92%E5%BA%8F%E5%92%8C%E5%BB%BA%E5%A0%86%E7%9A%84%E5%BA%94%E7%94%A8%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%A7%84%E5%88%99/priority_queue.png" class="oehvrmhglhud" alt="图片">
 
 <h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><h2 id="排序和建堆的效果"><a href="#排序和建堆的效果" class="headerlink" title="排序和建堆的效果"></a>排序和建堆的效果</h2><h3 id="排序："><a href="#排序：" class="headerlink" title="排序："></a>排序：</h3><p>less<T>变成<strong>升序</strong>（从左到右遍历下标时，数组元素是<strong>从小到大</strong>）<br>greater<T>变成<strong>降序</strong>（从左到右遍历下标时，数组元素是<strong>从大到小</strong>）</p>
 <h3 id="建堆："><a href="#建堆：" class="headerlink" title="建堆："></a>建堆：</h3><p>less<T>变成<strong>大顶堆</strong>（从上层到下层，堆元素是从大到小，同层之间随便）<br>greater<T>变成小顶堆（从上层到下层，堆元素是从小到大，同层之间随便）</p>
@@ -481,8 +489,27 @@
     <span title="站点阅读时长">1:07</span>
   </span>
 </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
+
 
     </div>
   </footer>
