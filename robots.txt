@@ -1,0 +1,21 @@
+
+# Hexo + GitHub Pages optimized robots.txt
+# 允许所有爬虫抓取主要内容
+ User-agent: *
+ Allow: /
+ Allow: /archives/
+ Allow: /categories/
+ Allow: /tags/
+ Allow: /about/
+
+# 阻止抓取无关静态资源，提高爬虫效率
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /lib/
+Disallow: /images/  # 如果图片不希望被单独抓取，可保留或移除
+
+# sitemap，方便搜索引擎快速发现文章
+Sitemap: https://你的github名.github.io/sitemap.xml
+
